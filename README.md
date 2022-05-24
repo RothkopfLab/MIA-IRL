@@ -1,13 +1,15 @@
-#### Interactive Reinforcement Learning with Bayesian Fusion of Multimodal Advice
+## Interactive Reinforcement Learning with Bayesian Fusion of Multimodal Advice
 
 
-This repository is the official implementation of the paper "Interactive Reinforcement Learning with Bayesian Fusion of Multimodal Advice". We propose the novel approach Multimodal IOP-Based Advice for Interactive Reinforcement Learning (MIA-IRL) to integrate human advice from multiple modalities into IRL algorithms, which uses the Bayesian fusion method Independent Opinion Pool (IOP) for fusing the output distributions of the modalities' individual classifiers.
+This repository is the official implementation of the paper "Interactive Reinforcement Learning with Bayesian Fusion of Multimodal Advice" by Susanne Trick, Franziska Herbert, Constantin A. Rothkopf, and Dorothea Koert, published in Robotics & Automation Letters 2022.
+
+We propose the novel approach Multimodal IOP-Based Advice for Interactive Reinforcement Learning (MIA-IRL) to integrate human advice from multiple modalities into IRL algorithms, which uses the Bayesian fusion method Independent Opinion Pool (IOP) for fusing the output distributions of the modalities' individual classifiers.
 
 The repository contains the code required for reproducing the simulated results given in the manuscript, i.e. Figure 3(b), (c), (d), and (e). Thus, it compares the proposed IRL algorithm to standard non-interactive Q-Learning and the related approach by Cruz et al. (2018), C-IRL, in a grid world scenario using simulated advice for two (or three) simulated modalities' classifiers.
 
 
 
-#### Requirements:
+### Requirements:
 
 The provided code runs on Ubuntu 16.04/18.04 with Python 2.7.18.
 
@@ -17,7 +19,7 @@ To install required packages type:
 
 
 
-#### Files:
+### Files:
 
 - **irl_module.py**:
 irl_module.py is the starting point for reproducing the simulated results given in the paper. It contains the functionality for evaluating all compared (I)RL approaches and plotting the resulting learning curves.
@@ -35,7 +37,7 @@ In action_selection_module.py the ActionSelectionModule class is implemented, wh
 In modality.py the Modality class is implemented, which serves for simulating advice for the modalities. Thus, it simulates categorical output distributions, which normally would be the output of modality classifiers. The simulated advice can be either correct or incorrect, certain or uncertain.
 
 
-#### Folders:
+### Folders:
 
 - **envs**
 envs contains the grid plan for the used grid world (in grid_plans), the images used for rendering the grid world (in img), and the script taxi.py, which contains the functionality for setting up the grid world and navigating in it.
@@ -48,7 +50,7 @@ policies contains the correct policy for the used grid world. This policy is nee
 
 
 
-#### Results:
+### Results:
 
 If you run
 
