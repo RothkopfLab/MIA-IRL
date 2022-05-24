@@ -28,7 +28,7 @@ irl_module.py is the starting point for reproducing the simulated results given 
 In rl_module.py the RlModule class is implemented, which contains all functionality for Q-Learning in a given grid world. The Q-learning algorithm chooses the action proposed by the learned Q-values if no advice is given. If advice is given, the action proposed by fusion_module and action_selection_module is selected. 
 
 - **fusion_module.py**:
-fusion_module.py contains the FusionModule class, which contains the code for fusing categorical distributions according to Independent Opinion Pool as well as according to the fusion method proposed in Cruz 2018 for comparison.
+fusion_module.py contains the FusionModule class, which contains the code for fusing categorical distributions according to Independent Opinion Pool as well as according to the fusion method proposed in Cruz et al. (2018) for comparison.
 
 - **action_selection_module.py**:
 In action_selection_module.py the ActionSelectionModule class is implemented, which contains different methods for selecting an action from a categorical distribution over actions. In particular, the action can be chosen by sampling, as we propose for our approach, or by taking the action with the highest probability if it is above a specified threshold, as proposed by the compared approach by Cruz et al. (2018).
