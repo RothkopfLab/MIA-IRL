@@ -1,0 +1,13 @@
+The environment files are encoded as follows:
+
+Each line is a row.
+The fields in a row are separated by one whitespace.
+
+Each field is described by a number with the following meanings:
+- 0: A free field
+- 1: A field where the agent can start (if there is only one then always same start position, if more then the choice is random at start of each episode)
+- 2: A wall
+- 4: passenger for taxi environment
+- 5: hole/fire (episode ends when agent falls in/burns)
+- 6: goal
+- All i > 5: A goal with reward i - 5
