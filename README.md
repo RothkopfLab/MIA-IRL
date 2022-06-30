@@ -3,6 +3,10 @@
 
 This repository is the official implementation of the paper "Interactive Reinforcement Learning with Bayesian Fusion of Multimodal Advice" by Susanne Trick, Franziska Herbert, Constantin A. Rothkopf, and Dorothea Koert, published in Robotics & Automation Letters 2022.
 
+The paper should be cited as
+
+*S. Trick, F. Herbert, C. A. Rothkopf and D. Koert, "Interactive Reinforcement Learning With Bayesian Fusion of Multimodal Advice," in IEEE Robotics and Automation Letters, vol. 7, no. 3, pp. 7558-7565, July 2022, doi: 10.1109/LRA.2022.3182100.*
+
 We propose the novel approach Multimodal IOP-Based Advice for Interactive Reinforcement Learning (MIA-IRL) to integrate human advice from multiple modalities into IRL algorithms, which uses the Bayesian fusion method Independent Opinion Pool (IOP) for fusing the output distributions of the modalities' individual classifiers.
 
 The repository contains the code required for reproducing the simulated results given in the manuscript, i.e. Figure 3(b), (c), (d), and (e). Thus, it compares the proposed IRL algorithm to standard non-interactive Q-Learning and the related approach by Cruz et al. (2018), C-IRL, in a grid world scenario using simulated advice for two (or three) simulated modalities' classifiers.
